@@ -1,0 +1,56 @@
+﻿@inherits LayoutComponentBase
+
+<div class="container py-3" data-enhance-nav="false">
+    <header>
+        <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+            <a href="/" class="d-flex align-items-center link-body-emphasis text-decoration-none">
+                <i class="bi bi-signpost fs-3"></i>
+                <span class="ms-2 fs-4">Direct Path Technologies</span> 
+            </a>
+            <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+                <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="/contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+    
+    @Body
+    
+    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+        <div class="row">
+            <div class="col-12 col-md">
+                <i class="bi bi-signpost fs-3"></i> ©@DateTime.Now.Year<br/>
+                Direct Path Technologies
+            </div>
+            <div class="col-6 col-md">
+                <h5>About</h5>
+                <ul class="list-unstyled text-small">
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="/contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                @*<h5>Resources</h5>Transform
+                <ul class="list-unstyled text-small">
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource</a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource name</a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another resource</a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Final resource</a></li>
+                </ul>*@
+            </div>
+            <div class="col-6 col-md">
+                @*<h5>About</h5>
+                <ul class="list-unstyled text-small">
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team</a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Locations</a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Privacy</a></li>
+                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Terms</a></li>
+                </ul>*@
+            </div>
+        </div>
+    </footer>
+</div>
+
+<div id="blazor-error-ui" data-nosnippet>
+    An unhandled error has occurred.
+    <a href="." class="reload">Reload</a>
+    <span class="dismiss">🗙</span>
+</div>
